@@ -40,7 +40,6 @@ namespace DatabaseConnection
             }
             else // if connection not exists
                 Console.WriteLine("No Oracle DB connection exists.");
-
         }
     }
 }
