@@ -6,9 +6,9 @@ namespace DatabaseConnection
     {
         private bool DbConnectionStatus;
         
-        protected string ConnectionString { get; set; }
+        internal protected string ConnectionString { get; set; }
         
-        protected TimeSpan Timeout { get; set; }
+        internal protected TimeSpan Timeout { get; set; }
         
         protected DateTime ConnectionRequestDateTime { get; set; }
 

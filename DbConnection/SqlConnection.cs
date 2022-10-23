@@ -18,7 +18,7 @@ namespace DatabaseConnection
             {
                 Timeout = timeout;
                 ConnectionRequestDateTime = DateTime.UtcNow;
-                Thread.Sleep(1000); //this thread sleeps 1s to test timeout
+                //Thread.Sleep(1000); //this thread sleeps 1s to test timeout
                 if (DateTime.UtcNow - ConnectionRequestDateTime >= timeout)
                 {
                     throw new ArgumentException("SQL DB connection request is timeouted.");

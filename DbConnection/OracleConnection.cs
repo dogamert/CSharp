@@ -17,7 +17,7 @@ namespace DatabaseConnection
             else if (connectionString == ConnectionString)
             {
                 ConnectionRequestDateTime = DateTime.UtcNow;
-                Thread.Sleep(1000); //this thread sleeps 1s to test timeout
+                //Thread.Sleep(1000); //this thread sleeps 1s to test timeout
                 if (DateTime.UtcNow - ConnectionRequestDateTime >= timeout)
                 {
                     throw new ArgumentException("Oracle DB connection request is timeouted.");
